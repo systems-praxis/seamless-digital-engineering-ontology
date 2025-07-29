@@ -1,0 +1,1675 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#"
+     xml:base="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cco2="https://www.commoncoreontologies.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:Ecore="http://www.eclipse.org/emf/2002/Ecore#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnexBootstrappableAnnex">
+        <owl:versionIRI rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex/v0.1"/>
+        <owl:imports rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering"/>
+        <dc:creator xml:lang="en">James S. Wheaton</dc:creator>
+        <dc:description xml:lang="en">Ontological modeling of Fully Countering Trusting Trust based on David A. Wheeler&apos;s Ph.D. dissertation</dc:description>
+        <dc:license>MPL-2.0</dc:license>
+        <terms:title xml:lang="en">Seamless Digital Engineering Ontology - Bootstrappable Annex</terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T14:00:00-07:00</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- https://www.commoncoreontologies.org/ont00001962 -->
+
+    <owl:AnnotationProperty rdf:about="https://www.commoncoreontologies.org/ont00001962"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#accurately_translates -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#accurately_translates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <rdfs:range rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000066"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001803"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001819"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001949"/>
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001899"/>
+        </owl:propertyChainAxiom>
+        <skos:definition xml:lang="en">5.6.3 Predicate accurately_translates(Compiler, Lang, Source, EnvEffects, RunOn, Target)</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#compiles -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#compiles">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001976"/>
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#language_correctly_implemented_by"/>
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executed_in_environment"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001803"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001819"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001949"/>
+        </owl:propertyChainAxiom>
+        <skos:definition xml:lang="en">5.6.5 Function compile
+We will model compiling as a function that returns an executable (a kind of data) and has the following parameters:
+
+function compile(Source, Compiler, EnvEffects, RunOn, Target)
+
+This represents compiling Source with the Compiler, running the compiler in environment RunOn, and instructing the compiler to generate an executable for the target environment Target. Note that Target may or may not be the same as RunOn.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language">
+        <owl:inverseOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#language_correctly_implemented_by"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#environs_execution_of_program -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#environs_execution_of_program">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executed_in_environment"/>
+        <rdfs:domain rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executable_exactly_corresponds_to_source -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executable_exactly_corresponds_to_source">
+        <owl:inverseOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#source_exactly_corresponds_to_executable"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:range rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executed_in_environment"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000183"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001949"/>
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putatively_built_from_source"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001976"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001899"/>
+            <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putative_source_of_executable"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executed_in_environment -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#executed_in_environment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:range rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001852"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#language_correctly_implemented_by -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#language_correctly_implemented_by">
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putative_source_of_executable -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putative_source_of_executable">
+        <owl:inverseOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putatively_built_from_source"/>
+        <rdfs:domain rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putatively_built_from_source -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putatively_built_from_source">
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:range rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#source_exactly_corresponds_to_executable -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#source_exactly_corresponds_to_executable">
+        <rdfs:domain rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#written_in_language -->
+
+    <owl:ObjectProperty rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#written_in_language">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:range rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001920"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000084"/>
+            <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001976"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler -->
+
+    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter -->
+
+    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ComputerAggregate -->
+
+    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerAggregate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.commoncoreontologies.org/ont00000420"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putatively_built_from_source"/>
+                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001949"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/CybersecurityAct -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CybersecurityAct"/>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Bootstrappability -->
+
+    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Bootstrappability">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Hardware_Bootstrapping -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Hardware_Bootstrapping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001778"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerComponent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Hardware_Creation"/>
+        <rdfs:label xml:lang="en">Act of Computer Hardware Bootstrapping</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Bootstrapping_(compilers)</rdfs:seeAlso>
+        <skos:definition xml:lang="en">a Planned Act with process part Computer Bootstrap Process</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Hardware_Creation -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Hardware_Creation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactCreation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Computer_Architecture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001986"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerComponent"/>
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerSystem"/>
+                                    <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00000420"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfArtifactCreation"/>
+        <rdfs:label xml:lang="en">Act of Computer Hardware Creation</rdfs:label>
+        <skos:definition xml:lang="en">An Intentional Act wherein some Agent designs a Computer Component.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Language_Bootstrapping -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Language_Bootstrapping">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001778"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfComputerProgramCreation"/>
+        <rdfs:label xml:lang="en">Act of Computer Language Bootstrapping</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Bootstrapping_(compilers)</rdfs:seeAlso>
+        <skos:definition xml:lang="en">a Planned Act with process part Computer Bootstrap Process</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Trusting_Trust_Threat_Mitigation -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Trusting_Trust_Threat_Mitigation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfCyberThreatMitigation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Intrinsic_Computer_Bootstrap_Process"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001959"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusting_Trust_Attack"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ActOfCyberThreatMitigation"/>
+        <rdfs:label xml:lang="en">Act of Trusting Trust Threat Mitigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SoftwareEngineeringSoftware"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#correctly_implements_language"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Assembler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Auditable_Hex_Seed -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Auditable_Hex_Seed">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ExecutableFile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001936"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Act_of_Role_Assignment"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001778"/>
+                                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Root_of_Trust_Role"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1024</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Byte"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ExecutableFile"/>
+        <rdfs:comment xml:lang="en">When a Computer System exposes only Machine Language, then the smallest possible Bootstrap Executable File is necessary to start the Bootstrap Process. Less than 512 bytes is achievable on common CPU architectures, making the Executable File human-auditable and therefore a Root of Trust.</rdfs:comment>
+        <rdfs:label xml:lang="en">Auditable Hex Seed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Bootstrappable_Quality_Claim -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Bootstrappable_Quality_Claim">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Quality_Claim"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Bootstrappability"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Intrinsic_Computer_Bootstrap_Process"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Quality_Claim"/>
+        <rdfs:label xml:lang="en">Bootstrappable Quality Claim</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Build_Artifact -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Build_Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/DigitalFile"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001816"/>
+                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Build_Execution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Build Artifact</rdfs:label>
+        <skos:definition xml:lang="en">a Digital File that is the output of some Computer Program Build Execution</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Boot_Process -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Boot_Process">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ParentComputerProgramExecution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerMemoryLocation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ParentComputerProgramExecution"/>
+        <rdfs:comment xml:lang="en">After the Computer is switched on, the CPU has no Software in its main Computer Memory, so some process must load Software into Computer Memory before it can be executed. This may be done by Computer Component or Firmware in the CPU, or by a separate Processor in the Computer System.</rdfs:comment>
+        <rdfs:label xml:lang="en">Computer Boot Process</rdfs:label>
+        <skos:altLabel xml:lang="en">Booting</skos:altLabel>
+        <skos:definition xml:lang="en">the process of starting a Computer as initiated via hardware such as a physical button on the Computer or by a Software Command</skos:definition>
+        <cco2:ont00001754 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Booting</cco2:ont00001754>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ExecutableFile"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001986"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution"/>
+        <rdfs:label xml:lang="en">Computer Bootstrap Process</rdfs:label>
+        <skos:definition xml:lang="en">a Computer Program Execution that takes as input Computer Bootstrap Artifact Models, proceeds thru Computer Bootstrap Process Stages, and returns as output Computer Program(s), e.g. Code Compiler, Code Interpreter, and/or Software Librar(ies).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Step"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001986"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+        <rdfs:label xml:lang="en">Computer Bootstrap Process Stage</rdfs:label>
+        <skos:definition xml:lang="en">Process stage of a Computer Bootstrap Process that takes as input Computer Program Source Code Files and outputs Code Compiler(s) or Code Interpreter(s) of a higher-level Programming Language.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Step -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Step">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Build_Execution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001778"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/SoftwareEngineeringSoftware"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <rdfs:comment xml:lang="en">The difference between High- and Low-Level Computer Language may be small for the purpose of each Computer Bootstrap Process Step.</rdfs:comment>
+        <rdfs:label xml:lang="en">Computer Bootstrap Process Step</rdfs:label>
+        <skos:definition xml:lang="en">Process step of a Computer Bootstrap Process Stage that implements a Software Engineering Software that uses a Programming Language of equal or higher expressive power than the Computer Bootstrap Process Step Programming Language.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Build_Execution -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Build_Execution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ChildComputerProgramExecution"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001986"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Build_Artifact"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ChildComputerProgramExecution"/>
+        <rdfs:label xml:lang="en">Computer Program Build Execution</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Software_build</rdfs:seeAlso>
+        <skos:definition xml:lang="en">A Child Computer Program Execution that transforms Computer Program Artifact Model into Computer Program(s).
+
+The process optionally includes Code Compilation, Data Transfer, and Digital File Process (which is predicated on a Digital File System existing).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerSystem"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000183"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
+        <rdfs:label xml:lang="en">Computer Program Execution Environment</rdfs:label>
+        <skos:definition xml:lang="en">A Computer System that can run Computer Programs. This would include the Computer Components (including the Central Processing Unit) and any Software that supports or could influence the Computer Program&apos;s result (e.g., the Operating System). It could include a byte Code Interpreter or Machine Simulator.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">derived from pg. 46, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/TextFile"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramArtifactModel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#putative_source_of_executable"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001976"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/TextFile"/>
+        <rdfs:label xml:lang="en">Computer Program Source Code File</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00000660"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001819"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramExecution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000660"/>
+        <rdfs:comment xml:lang="en">This is used to model random number generators, thread execution ordering, differences between platforms allowed by the language, and so on. Note that this is not simply data in the usual sense, since other issues such as thread execution ordering are included as effects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cyber Effect</rdfs:label>
+        <skos:definition xml:lang="en">All information or execution timing arising from the Computer Environment that can affect the results of a Computer Program Execution, but is not part of the input Digital Files.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">derived from pg. 46, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Extrinsic_Computer_Bootstrap_Process -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Extrinsic_Computer_Bootstrap_Process">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Build_Artifact"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001949"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+        <rdfs:label xml:lang="en">Extrinsic Computer Bootstrap Process</rdfs:label>
+        <skos:definition xml:lang="en">a Computer Bootstrap Process which has as inputs Computer Program Artifact Model and Build Artifacts generated by an extrinsic Code Compiler</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Intrinsic_Computer_Bootstrap_Process -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Intrinsic_Computer_Bootstrap_Process">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Auditable_Hex_Seed"/>
+                                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process"/>
+        <rdfs:comment xml:lang="en">There are two subclasses: &quot;Paranoid&quot; Bootstrapping and &quot;Assisted&quot; Bootstrapping:
+
+a) Paranoid adds the process Constraints of performing an Act of Auditing, then using an Input Device to manually input each symbol of each Computer Program Artifact Model into the Computer which is the object of Act of Intrinsic Bootstrapping&apos;, as an Act of Cyber Threat Mitigation.
+b) Assisted means using Computer Program Artifact Models from a Trusted Source which have undergone an Act of Auditing, and loading them into the Computer from the Digital File System using a Computer Program which is continuant part of the Act of Intrinsic Bootstrapping.</rdfs:comment>
+        <rdfs:label xml:lang="en">Intrinsic Computer Bootstrap Process</rdfs:label>
+        <skos:altLabel xml:lang="en">Full-Source Bootstrap</skos:altLabel>
+        <skos:definition xml:lang="en">a Computer Bootstrap Process which uses only intrinsic Computer Program Artifact Models</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Source_Code_Correspondence -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Source_Code_Correspondence">
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Condition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Code_Compiler -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Code_Compiler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program"/>
+        <rdfs:label xml:lang="en">Trusted Code Compiler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Code_Interpreter -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Code_Interpreter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program"/>
+        <rdfs:label xml:lang="en">Trusted Code Interpreter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Computer_Program">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Trusted_Role"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:comment xml:lang="en">A Trusted Computer Program is not necessarily a Trustworthy Computer Program.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trusted Computer Program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusting_Trust_Attack -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusting_Trust_Attack">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/CyberAttack"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001777"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompilation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001778"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001921"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001986"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/BackdoorProgram"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CyberAttack"/>
+        <rdfs:label xml:lang="en">Trusting Trust Attack</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">The &quot;Trusting Trust&quot; Attack from Ken Thompson&apos;s 1983 Turing Award acceptance speech, &quot;Reflections on Trusting Trust&quot; compromises a compiler binary, causing it to insert a backdoor in the &quot;login&quot; program, and to insert the compiler backdoor back into the compiler when compiling it, while leaving no trace in source code. https://research.swtch.com/nih
+
+This Cyber Attack was originally described by Paul A. Karger and Roger R. Schell, June 1974, &quot;Multics Security Evaluation: Vulnerability Analysis&quot;. ESD-TR-74-193, Vol. II. pp. 51-52. Reprinted on September 18, 2002 as &quot;Thirty Years Later: Lessons from the Multics Security Evaluation&quot;, Proc. of ACSAC 2002. http://www.acsac.org/2002/papers/classic-multics.pdf</rdfs:seeAlso>
+        <skos:definition xml:lang="en">A Cyber Attack whose Targeted Asset is a Code Compiler, which inserts a Backdoor Program into the Code Compiler which, when Code Compilation of the Targeted Computer Program Artifact Model occurs, inserts a Backdoor Program in the Targeted Computer Program, and when used to compile the Computer Program Artifact Model of the Code Compiler, inserts the original Backdoor Program into the compiled Code Compiler.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trustworthy_Computer_Program -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trustworthy_Computer_Program">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Complete_Assurance_Case_Report"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Trustworthy_Role"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001936"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Act_of_Assurance_Evaluation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgram"/>
+        <rdfs:comment xml:lang="en">A Trustworthy Computer Program is human-auditable and formally-verified by automated proof assistant(s).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A Trustworthy Computer Program is the preferred choice as the Trusted Computer Program in-use.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trustworthy Computer Program</rdfs:label>
+        <skos:definition xml:lang="en">a Computer Program that provides a Supported Claim for its Trustworthiness Claim</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#HACK_Bootstrappable_Claim -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#HACK_Bootstrappable_Claim">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Bootstrappable_Quality_Claim"/>
+        <cco2:ont00001942 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Bootstrappable_KQA"/>
+        <rdfs:label xml:lang="en">HACK Bootstrappable Claim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <owl:sameAs rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2"/>
+        <cco2:ont00001936 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Diverse_Double-Compiling_Process"/>
+        <skos:definition xml:lang="en">the Code Compiler-under-test, object of Diverse Double-Compiling Process, which putatively was developed by the &quot;Claimed Origin&quot; process</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2 -->
+
+    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2"/>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cGP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cGP">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <skos:definition xml:lang="en">(Claimed Origin) The grandparent compiler, if there is one.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cP">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <skos:definition xml:lang="en">(Claimed Origin) Putative parent Code Compiler</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cT -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cT">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Trusted_Code_Compiler"/>
+        <accurately_translates rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP"/>
+        <skos:definition xml:lang="en">cT : Executable. The trusted compiler. It is trusted in the sense that it is trusted to not
+have triggers or payloads that will activate when compiling source sP .</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e1">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <obo:BFO_0000183 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_x1"/>
+        <skos:definition xml:lang="en">e1: Environment. The environment that executes compilation step 1, which uses cT to compile sP and produce stage1.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e1effects -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e1effects">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect"/>
+        <cco2:ont00001819 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_x1"/>
+        <skos:definition xml:lang="en">e1effects: Effects. The effects sent from environment e1 to compilation step 1.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e2 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e2">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <skos:definition xml:lang="en">e2: Environment: The environment that executes compilation step 2, which uses stage1 to compile sA and produce stage2.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e2effects -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e2effects">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect"/>
+        <skos:definition xml:lang="en">e2effects: Effects. The effects sent from environment e2 to compilation step 2.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eA">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <skos:definition xml:lang="en">(Claimed Origin) eA: Environment: The environment that executes compilation step o2, which uses cP to compile sA and produce cA.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eAeffects -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eAeffects">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect"/>
+        <skos:definition xml:lang="en">(Claimed Origin) eAeffects: Effects. The effects sent from environment eA to Code Compilation step o2.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eArun -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eArun">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <skos:definition xml:lang="en">eArun: Environment: The environment that stage2 is intended to run on.</skos:definition>
+        <skos:definition xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_eP">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Execution_Environment"/>
+        <skos:definition xml:lang="en">(Claimed Origin) eP: Environment: The environment that executes Code Compilation step o1, which uses cGP to compile sP and produce cP.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_ePeffects -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_ePeffects">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Cyber_Effect"/>
+        <skos:definition xml:lang="en">(Claimed Origin) e2effects: Effects. The effects sent from environment eP to Code Compilation step o1.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 48, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_always_equal -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_always_equal">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Formal_Verification_Proof_Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_cP_corresponds_to_sP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_cP_corresponds_to_sP">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Formal_Verification_Proof_Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_source_corresponds_to_executable -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_goal_source_corresponds_to_executable">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Formal_Verification_Proof_Goal"/>
+        <rdfs:seeAlso rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA"/>
+        <rdfs:seeAlso rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2"/>
+        <skos:definition>(stage2 = cA) -&gt; exactly_correspond(cA, sA, lsA, eArun).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsA">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+        <skos:definition xml:lang="en">The Computer Language used in source sA.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsP">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerLanguage"/>
+        <skos:definition xml:lang="en">The Computer Language used by source sP.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mA">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramArtifactModel"/>
+        <cco2:ont00001942 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA"/>
+        <skos:definition xml:lang="en">mA: Artifact Model. The (putative) Artifact Model of the Code Compiler-under-test (cA).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mP">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ComputerProgramArtifactModel"/>
+        <cco2:ont00001942 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cP"/>
+        <skos:definition xml:lang="en">mP: Artifact Model. The (putative) Artifact Model of the parent Code Compiler (cP).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sA">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <obo:BFO_0000101 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mA"/>
+        <putative_source_of_executable rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsA"/>
+        <skos:definition xml:lang="en">sA: Source. The (putative) Computer Program Source Code File of the Code Compiler-under-test (cA).</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <obo:BFO_0000101 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_mP"/>
+        <putative_source_of_executable rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cP"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_lsP"/>
+        <skos:definition xml:lang="en">sP: Source. The (putative) Computer Program Source Code File of the “parent” Code Compiler.</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage1">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <skos:definition xml:lang="en">stage1: Executable. The result of DDC compilation step 1.
+
+This will be defined, using the functional notation below, as compile(s_P, c_T, e1effects, e1, e2).</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeCompiler"/>
+        <skos:definition xml:lang="en">stage1: Executable. The result of DDC compilation step 2.
+
+This will be defined as compile(s_A, stage1, e2effects, e2, eArun).</skos:definition>
+        <cco2:ont00001754 xml:lang="en">pg. 47, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_x1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_x1">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <obo:BFO_0000066 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_e1"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP"/>
+        <cco2:ont00001949 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cT"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage1"/>
+        <skos:definition xml:lang="en">Computer Program Execution of step 1 in DDC Process</skos:definition>
+        <cco2:ont00001754 xml:lang="en">Figure 4, pg. 45, &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation (2009), David A. Wheeler.</cco2:ont00001754>
+        <cco2:ont00001778 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Diverse_Double-Compiling_Process -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Diverse_Double-Compiling_Process">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Computer_Language_Bootstrapping"/>
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Act_of_Trusting_Trust_Threat_Mitigation"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cGP"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cT"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sA"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_sP"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_stage2"/>
+        <rdfs:label xml:lang="en">Diverse Double-Compiling Process</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dwheeler.com/trusting-trust/</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">DDC process</skos:altLabel>
+        <cco2:ont00001754 xml:lang="en">David A. Wheeler, (2009), &quot;Fully Countering Trusting Trust through Diverse Double-Compiling&quot;, Ph.D. Dissertation.</cco2:ont00001754>
+        <cco2:ont00001778 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#DDC_cA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Forth_Stage -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Forth_Stage">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Source_Code_File"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Interpreter"/>
+        <rdfs:label xml:lang="en">HACK-on-WebAssembly Forth Stage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Kernel_Stage -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Kernel_Stage">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_Interpreter"/>
+        <rdfs:label xml:lang="en">HACK-on-WebAssembly Kernel Stage</rdfs:label>
+        <cco2:ont00001962 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Forth_Stage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Stack_Programming_Language"/>
+        <rdfs:label xml:lang="en">HACK ANS Forth</rdfs:label>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Interpreter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Interpreter -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Interpreter">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth"/>
+        <rdfs:label xml:lang="en">HACK ANS Forth Interpreter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Source_Code_File -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Source_Code_File">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Program_Source_Code_File"/>
+        <rdfs:label xml:lang="en">HACK ANS Forth Source Code File</rdfs:label>
+        <skos:altLabel>waforth.wat</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Bootstrap_Process -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Bootstrap_Process">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Intrinsic_Computer_Bootstrap_Process"/>
+        <cco2:ont00001777 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Forth_Stage"/>
+        <cco2:ont00001777 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK-on-WebAssembly_Kernel_Stage"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_ANS_Forth_Source_Code_File"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#HACK_Bootstrappable_Claim"/>
+        <cco2:ont00001986 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#High-Assurance_Computing_Kit"/>
+        <rdfs:label xml:lang="en">HACK Bootstrap Process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_Interpreter -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_Interpreter">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_LISP"/>
+        <rdfs:label xml:lang="en">HACK Kernel Interpreter</rdfs:label>
+        <skos:definition xml:lang="en">bootstrap interpreter for a simple Scheme-like functional programming language</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_LISP -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_LISP">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Functional_Programming_Language"/>
+        <rdfs:label xml:lang="en">HACK Kernel Lisp</rdfs:label>
+        <skos:definition xml:lang="en">Kernel LISP programming language based on simply typed vau calculus</skos:definition>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Kernel_Interpreter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Language -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Language">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Pure_Functional_Programming_Language"/>
+        <rdfs:label xml:lang="en">HACK Language</rdfs:label>
+        <skos:definition xml:lang="en">LISP-based meta-language for seamless digital engineering</skos:definition>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Virtual_Machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Proof_Assistant -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Proof_Assistant">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Proof_Assistant"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Star"/>
+        <rdfs:label xml:lang="en">HACK Proof Assistant</rdfs:label>
+        <rdfs:seeAlso>https://fstar-lang.org/</rdfs:seeAlso>
+        <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.portal.chalmers.se/agda/pmwiki.php</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Star -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Star">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Pure_Functional_Programming_Language"/>
+        <rdfs:label xml:lang="en">HACK Star</rdfs:label>
+        <skos:definition xml:lang="en">an bootstrap-intermediate HACK programming language oriented toward program verification and computational type theory</skos:definition>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Proof_Assistant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Virtual_Machine -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Virtual_Machine">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_Language"/>
+        <rdfs:label xml:lang="en">HACK Virtual Machine</rdfs:label>
+        <skos:definition xml:lang="en">runtime that implements the HACK Language and HACK System</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage0 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage0">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <cco2:ont00001921 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_Hex_Seed"/>
+        <rdfs:label xml:lang="en">HACK on register-machine stage0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage1">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <rdfs:label xml:lang="en">HACK on register-machine stage1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage2 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage2">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <rdfs:label xml:lang="en">HACK on register-machine stage2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage3 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#HACK_on_register-machine_stage3">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Computer_Bootstrap_Process_Stage"/>
+        <rdfs:label xml:lang="en">HACK on register-machine stage3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#M0 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#M0">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/AssemblyLanguage"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_M0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Milawa_Thereom_Prover -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Milawa_Thereom_Prover">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Theorem_Prover"/>
+        <rdfs:label xml:lang="en">Milawa Theorem Prover</rdfs:label>
+        <skos:definition xml:lang="en">bootstrapped first-order logic interactive thereom prover</skos:definition>
+        <cco2:ont00001754 xml:lang="en">Davis, Jared C., (December 2009), &quot;A Self-Verifying Theorem Prover&quot;, PhD Dissertation, University of Texas at Austin.</cco2:ont00001754>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_Hex_Seed -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_Hex_Seed">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Auditable_Hex_Seed"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_ISA"/>
+        <rdfs:label xml:lang="en">POWER9 Hex Seed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_ISA -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_ISA">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/MachineLanguage"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_Hex_Seed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_M0 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_M0">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#M0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex0 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex0">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex1">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex2 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex2">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#Assembler"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_preForth -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_preForth">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#preForth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_seedForth -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_seedForth">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CodeInterpreter"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#seedForth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Logic_Programming_Language"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog_Library -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog_Library">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Solver"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#egglog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex0 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex0">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/AssemblyLanguage"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex1 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex1">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/AssemblyLanguage"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex2 -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#hex2">
+        <rdf:type rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/AssemblyLanguage"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_hex2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Logic_Programming_Language"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren_Library -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren_Library">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Solver"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#microKanren"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Logic_Programming_Language"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren_Library"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren_Library -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren_Library">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Constraint_Solver"/>
+        <cco2:ont00001976 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#miniKanren"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#preForth -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#preForth">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Stack_Programming_Language"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_preForth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#seedForth -->
+
+    <owl:NamedIndividual rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#seedForth">
+        <rdf:type rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Stack_Programming_Language"/>
+        <cco2:ont00001899 rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex#POWER9_seedForth"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

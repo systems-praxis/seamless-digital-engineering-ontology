@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering" uri="SeamlessDigitalEngineering.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri id="Manual entry (2024-12-12)" name="https://hack.cyberearth.systems/memex/ontologies/SeamlessDigitalEngineering" uri="SeamlessDigitalEngineering.owl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://hack.cyberearth.systems/memex/ontologies/SeamlessDigitalEngineering/v0.1" uri="SeamlessDigitalEngineering.owl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://hack.cyberearth.systems/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex" uri="SeamlessDigitalEngineeringBootstrappableAnnex.owl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://hack.cyberearth.systems/memex/ontologies/SeamlessDigitalEngineeringBootstrappableAnnex/v0.1" uri="SeamlessDigitalEngineeringBootstrappableAnnex.owl"/>
+        <uri id="Manual entry (2024-12-12)" name="http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl" uri="CommonCoreOntologies/src/cco-imports/bfo-core.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/AllCoreOntology" uri="CommonCoreOntologies/src/cco-merged/AllCoreOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/AgentOntology" uri="CommonCoreOntologies/src/cco-modules/AgentOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/ArtifactOntology" uri="CommonCoreOntologies/src/cco-modules/ArtifactOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/CurrencyUnitOntology" uri="CommonCoreOntologies/src/cco-modules/CurrencyUnitOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/EventOntology" uri="CommonCoreOntologies/src/cco-modules/EventOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/ExtendedRelationOntology" uri="CommonCoreOntologies/src/cco-modules/ExtendedRelationOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/FacilityOntology" uri="CommonCoreOntologies/src/cco-modules/FacilityOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/GeospatialOntology" uri="CommonCoreOntologies/src/cco-modules/GeospatialOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/InformationEntityOntology" uri="CommonCoreOntologies/src/cco-modules/InformationEntityOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/QualityOntology" uri="CommonCoreOntologies/src/cco-modules/QualityOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/TimeOntology" uri="CommonCoreOntologies/src/cco-modules/TimeOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="https://www.commoncoreontologies.org/UnitsOfMeasureOntology" uri="CommonCoreOntologies/src/cco-modules/UnitsOfMeasureOntology.ttl"/>
+        <uri id="Manual entry (2024-12-12)" name="http://www.ontologyrepository.com/CommonCoreOntologies/Domain/2024-04-17/CyberOntology" uri="CyberOntology-develop.owl"/>
+        <uri id="Manual entry (2024-12-12)" name="http://www.ontologyrepository.com/CommonCoreOntologies/Domain/CyberOntology" uri="CyberOntology-develop.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,6 @@
+[submodule "CommonCoreOntologies"]
+	path = CommonCoreOntologies
+	url = https://github.com/CommonCoreOntology/CommonCoreOntologies
+[submodule "cyber-ontology-releases"]
+	path = cyber-ontology-releases
+	url = https://opensource.ieee.org/cyber-ontology-working-group/cyber-ontology-releases.git
