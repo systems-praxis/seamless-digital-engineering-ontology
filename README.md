@@ -84,6 +84,7 @@ _TBD_
 J. S. Wheaton, D. R. Herber. '*Ontological Definition of Seamless Digital Engineering Based on ISO/IEC 25000-Series SQuaRE Product Quality Model*.' (to appear) In Proceedings of INCOSE International Symposium 2025, Ottawa, Canada, July 29, 2025.
 
 - [Paper (arXiv Preprint)](https://arxiv.org/abs/2507.17171)
+- [Presentation (PDF)](./publications/Presentation_INCOSE_IS_2025_Ontological_definition_of_seamless_digital_engineering.pdf)
 - BibTeX citation:
 
          @inproceedings{Wheaton2025b,
