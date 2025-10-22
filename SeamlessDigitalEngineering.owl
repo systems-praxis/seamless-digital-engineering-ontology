@@ -2827,47 +2827,25 @@ Systems and software engineering — Systems and software Quality Requirements a
 
     <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Concept_of_Operations">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Conceptual_Model"/>
-        <owl:disjointWith rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Operational_Concept"/>
-        <rdfs:label xml:lang="en">Concept of Operations</rdfs:label>
-        <skos:altLabel>ConOps</skos:altLabel>
-        <skos:definition xml:lang="en">verbal and graphic statement, in broad outline, of an Organization’s assumptions or intent in regard to an operation or series of operations of new, modified, or existing organizational Systems</skos:definition>
-        <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
-    </owl:Class>
-    
-
-
-    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Conceptual_Model -->
-
-    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Conceptual_Model">
-        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000084"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Stakeholder"/>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle"/>
+                        <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00001180"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001045"/>
-        <rdfs:comment xml:lang="en">Although the provided definition uses the term &quot;representation&quot;, indicating it could be a Representational ICE, it states that it &quot;expresses how an entity can satisfy the Problem ...&quot; making it a kind of Directive ICE or Artifact Model.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This definition, although nonstandard, was considered ontologically useful in the absence of an authoritative definition.
-
-The ISO/IEC/IEEE 24765:2017 provides a domain-specific definition: &quot;model of the concepts relevant to some endeavor&quot;, sourced from the IEEE 1320.2-1998 (R2004) IEEE Standard for Conceptual Modeling Language Syntax and Semantics for IDEF1X97.</rdfs:comment>
-        <rdfs:label xml:lang="en">Conceptual Model</rdfs:label>
-        <skos:altLabel xml:lang="en">Lifecycle Concept</skos:altLabel>
-        <skos:definition xml:lang="en">A written or graphic representation that concisely expresses how an entity can satisfy the Problem, Threat, or Opportunity it was defined to address within specified Constraints with acceptable Risk.</skos:definition>
-        <cco2:ont00001754>INCOSE Needs and Requirements Manual R1.1 (2022)</cco2:ont00001754>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Concept"/>
+        <owl:disjointWith rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Operational_Concept"/>
+        <rdfs:label xml:lang="en">Concept of Operations</rdfs:label>
+        <skos:altLabel>ConOps</skos:altLabel>
+        <skos:definition xml:lang="en">A verbal and graphic statement, in broad outline, of an Organization’s assumptions or intent in regard to an operation or series of operations of new, modified, or existing organizational Systems</skos:definition>
+        <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
     </owl:Class>
     
 
@@ -6457,6 +6435,35 @@ This encompasses knowledge, skills, and knowledge assets, including system eleme
     
 
 
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Concept -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000084"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Stakeholder"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001045"/>
+        <rdfs:comment xml:lang="en">Although the provided definition uses the term &quot;representation&quot;, indicating it could be a Representational ICE, it states that it &quot;expresses how an entity can satisfy the Problem ...&quot; making it a kind of Prescriptive ICE or Artifact Model.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This definition, although nonstandard, was considered ontologically useful in the absence of an authoritative definition.
+
+The ISO/IEC/IEEE 24765:2017 provides a domain-specific definition: &quot;model of the concepts relevant to some endeavor&quot;, sourced from the IEEE 1320.2-1998 (R2004) IEEE Standard for Conceptual Modeling Language Syntax and Semantics for IDEF1X97.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lifecycle Concept</rdfs:label>
+        <skos:definition xml:lang="en">A written or graphic representation that concisely expresses how an entity can satisfy the Problem, Threat or Opportunity, Mission, Goals, Objectives, and Measures it was defined to address within specified Constraints with acceptable Risk.</skos:definition>
+        <cco2:ont00001754>INCOSE Needs and Requirements Manual R1.1 (2022)</cco2:ont00001754>
+    </owl:Class>
+    
+
+
     <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Model -->
 
     <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Model">
@@ -7325,24 +7332,20 @@ In the object-capability model, all computation is performed following the above
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Operator"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
                         <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Environment"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Conceptual_Model"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Concept"/>
         <rdfs:comment xml:lang="en">Although the canonical definition is the same as Concept of Operations, the standard document note provided distinguishes it by perspective and thus was added to this definition.</rdfs:comment>
         <rdfs:label xml:lang="en">Operational Concept</rdfs:label>
         <skos:altLabel>OpsCon</skos:altLabel>
-        <skos:definition xml:lang="en">&quot;verbal and graphic statement of an Organization’s assumptions or intent in regard to an operation or series of operations of a specific System or a related set of specific new, existing or modified systems&quot;, &quot;in the organization&apos;s operational environment from the users&apos; and operators&apos; perspective&quot;</skos:definition>
+        <skos:definition xml:lang="en">A &quot;verbal and graphic statement of an Organization’s assumptions or intent in regard to an operation or series of operations of a specific System or a related set of specific new, existing or modified Systems&quot;, &quot;in the Organization&apos;s Operational Environment from the Users&apos; and Operators&apos; perspective&quot;</skos:definition>
         <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
     </owl:Class>
     
@@ -10618,7 +10621,7 @@ Systems and software engineering — Systems and software Quality Requirements a
                 <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Environment"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Conceptual_Model"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Lifecycle_Concept"/>
         <rdfs:label xml:lang="en">System Context Model</rdfs:label>
         <skos:definition xml:lang="en">Describes the system relationships and environment, resolved around a selected system-of-interest.</skos:definition>
     </owl:Class>
