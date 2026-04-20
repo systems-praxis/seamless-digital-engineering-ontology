@@ -2550,25 +2550,6 @@ Systems and software engineering — Systems and software Quality Requirements a
     
 
 
-    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability -->
-
-    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001889"/>
-                <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:comment xml:lang="en">Generally, different kinds of capabilities exist: organizational capability, system (3.1.35) capability, and operational capability. Organizational capabilities relate through the work practices that are adopted by the organizations. New systems (with new or enhanced system capabilities) are developed to enhance enterprise operational capability in response to stakeholders&apos; (3.1.32) concerns (3.1.5) about a problem situation. Operational capabilities provide operational services that are enabled by system capabilities. These system capabilities are inherent in the system that is conceived, developed, created, and/or operated by an enterprise. Enterprise SE concentrates its efforts on maximizing operational value for various stakeholders, some of whom can be interested in the improvement of some problem situation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Capability</rdfs:label>
-        <skos:definition xml:lang="en">A Realizable Entity that inheres in a System to the extent of that System&apos;s capacity to realize it in Intentional Acts of a certain type.</skos:definition>
-        <skos:definition xml:lang="en">ability to do something useful under a particular set of conditions</skos:definition>
-        <cco2:ont00001754 xml:lang="en">ISO/IEC/IEEE 24641:2023 — Systems and Software engineering — Methods and tools for model-based systems and software engineering</cco2:ont00001754>
-    </owl:Class>
-    
-
-
     <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Certainty -->
 
     <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Certainty">
@@ -3229,6 +3210,31 @@ Source: ISO/IEC/IEEE 15288:2023</rdfs:comment>
     
 
 
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Power -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Power">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Digital_Capability"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CyberAct"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000195"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Right"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Digital_Capability"/>
+        <rdfs:label xml:lang="en">Cyber Power</rdfs:label>
+        <skos:definition xml:lang="en">A Digital Capability that is realized by some Cyber Act, i.e. in Cyberspace, and specifically depends on some Cyber Right to be exercised</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Regulation -->
 
     <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Regulation">
@@ -3276,11 +3282,7 @@ Source: ISO/IEC/IEEE 15288:2023</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00000591"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
-                        <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00000700"/>
-                    </owl:Restriction>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Digital_Realm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000183"/>
                         <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/CyberAct"/>
@@ -3288,10 +3290,10 @@ Source: ISO/IEC/IEEE 15288:2023</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00000591"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Digital_Realm"/>
         <rdfs:label xml:lang="en">Cyberspace</rdfs:label>
-        <skos:definition xml:lang="en">interconnected digital environment of Computer Networks, Services, Systems, People, Cyber Acts, Organizations, and that which resides on the Digital Environment or traverses through it</skos:definition>
-        <cco2:ont00001754 xml:lang="en">ISO/IEC TS 27100:2020, 3.5</cco2:ont00001754>
+        <cco2:ont00001737 xml:lang="en">interconnected digital environment of Computer Networks, Services, Systems, People, Cyber Acts, Organizations, and that which resides on the Digital Environment or traverses through it</cco2:ont00001737>
+        <cco2:ont00001745 xml:lang="en">ISO/IEC TS 27100:2020, 3.5</cco2:ont00001745>
     </owl:Class>
     
 
@@ -3756,7 +3758,7 @@ Source: https://www.dau.edu/glossary/authoritative-source-truth</rdfs:comment>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                         <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00001158"/>
@@ -3764,7 +3766,7 @@ Source: https://www.dau.edu/glossary/authoritative-source-truth</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
         <rdfs:label xml:lang="en">Digital Capability</rdfs:label>
         <skos:definition xml:lang="en">A Capability that is realized by some Act of Data Transformation</skos:definition>
     </owl:Class>
@@ -5772,7 +5774,7 @@ Part 210: Human-centred design for interactive systems</cco2:ont00001754>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Right"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000195"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
                         <owl:someValuesFrom rdf:resource="https://www.commoncoreontologies.org/ont00001262"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -5780,9 +5782,9 @@ Part 210: Human-centred design for interactive systems</cco2:ont00001754>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Right"/>
         <rdfs:label xml:lang="en">Human Right</rdfs:label>
-        <skos:definition xml:lang="en">Right to which every Person is entitled</skos:definition>
-        <cco2:ont00001754 xml:lang="en">ISO/IEC/IEEE 24738-7000:2022 (3.1.33)
-Systems and software engineering - Life cycle management - Part 7000: Standard model process for addressing ethical concerns during system design</cco2:ont00001754>
+        <cco2:ont00001737 xml:lang="en">Right to which every Person is entitled</cco2:ont00001737>
+        <cco2:ont00001745 xml:lang="en">ISO/IEC/IEEE 24738-7000:2022 (3.1.33)
+Systems and software engineering - Life cycle management - Part 7000: Standard model process for addressing ethical concerns during system design</cco2:ont00001745>
     </owl:Class>
     
 
@@ -6932,11 +6934,11 @@ g) Reports documenting the fulfilment of the Requirements of this Document.</sko
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001942"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Context_of_Use"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -7059,7 +7061,7 @@ g) Reports documenting the fulfilment of the Requirements of this Document.</sko
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Right"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                         <owl:someValuesFrom>
@@ -7082,7 +7084,7 @@ g) Reports documenting the fulfilment of the Requirements of this Document.</sko
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Cyber_Right"/>
         <rdfs:comment xml:lang="en">An Object Capability can be obtained by the following combination:
 
 - An unforgeable reference (in the sense of object references or protected pointers) that can be sent in messages.
@@ -7102,7 +7104,7 @@ In the object-capability model, all computation is performed following the above
         <rdfs:seeAlso xml:lang="en">Dennis, Jack B. and Van Horn, Earl C., (March 1966), &quot;Programming Semantics for Multiprogrammed Computations&quot;, Communications of the ACM, 9(3):142-155. DOI: https://dx.doi.org/10.1145/365230.365252</rdfs:seeAlso>
         <rdfs:seeAlso xml:lang="en">Rees, Jonathan A. and Sussman, Gerald J., (March 1996), &quot;A security kernel based on the lambda calculus&quot;, AI Memo No. AIM-1564, Massachusetts Institute of Technology. http://hdl.handle.net/1721.1/5944</rdfs:seeAlso>
         <skos:altLabel xml:lang="en">OCap</skos:altLabel>
-        <skos:definition xml:lang="en">a transferable right to perform one (or more) Act of Information Processing on a given Digital Object</skos:definition>
+        <skos:definition xml:lang="en">A transferable Right to perform one (or more) Act of Information Processing on a given Digital Object</skos:definition>
         <cco2:ont00001754 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Object-capability_model</cco2:ont00001754>
     </owl:Class>
     
@@ -7777,6 +7779,7 @@ In the object-capability model, all computation is performed following the above
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Engineered_System"/>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
         <skos:altLabel xml:lang="en">Good</skos:altLabel>
         <skos:definition xml:lang="en">output of an Organization that can be produced without any transaction taking place between the Organization and the Customer</skos:definition>
         <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
@@ -7872,6 +7875,7 @@ Such differences or changes in the context of use can include, for example, the 
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000194"/>
                         <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Product_Quality"/>
@@ -7883,7 +7887,7 @@ Such differences or changes in the context of use can include, for example, the 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
         <rdfs:label xml:lang="en">Product Capability</rdfs:label>
     </owl:Class>
     
@@ -10014,7 +10018,7 @@ Information security, cybersecurity and privacy protection - Evaluation criteria
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+                    <rdf:Description rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001816"/>
                         <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Activity"/>
@@ -10022,7 +10026,8 @@ Information security, cybersecurity and privacy protection - Evaluation criteria
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+        <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
         <skos:definition xml:lang="en">[Capability] of an Organization with at least one Activity necessarily performed between the Organization and the Customer</skos:definition>
         <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
     </owl:Class>
@@ -10503,6 +10508,7 @@ Systems and software engineering — Systems and software Quality Requirements a
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <owl:disjointWith rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Environment"/>
         <dc:source xml:lang="en">https://sebokwiki.org/wiki/System_(glossary)</dc:source>
+        <rdfs:label xml:lang="en">System</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/System</rdfs:seeAlso>
         <skos:definition xml:lang="en">arrangement of parts or elements that together exhibit a stated behaviour or meaning that the individual constituents do not.</skos:definition>
         <cco2:ont00001754 xml:lang="en">ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
@@ -10536,12 +10542,13 @@ Systems and software engineering — Systems and software Quality Requirements a
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001898"/>
-                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#Capability"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System"/>
+        <rdfs:label xml:lang="en">System-of-Systems</rdfs:label>
         <skos:altLabel>SoS</skos:altLabel>
         <skos:definition xml:lang="en">set of Systems or System Elements that interact to provide a unique Capability that none of the constituent Systems can accomplish on its own</skos:definition>
         <cco2:ont00001754>ISO/IEC/IEEE 15288:2023</cco2:ont00001754>
@@ -10608,6 +10615,30 @@ Systems and software engineering — Systems and software Quality Requirements a
     <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Architecture_Pattern">
         <rdfs:subClassOf rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Architecture_Model"/>
         <rdfs:label xml:lang="en">System Architecture Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability -->
+
+    <owl:Class rdf:about="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System_Capability">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.commoncoreontologies.org/ont00001379"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.commoncoreontologies.org/ont00001889"/>
+                        <owl:someValuesFrom rdf:resource="https://hack.cybersystems.engineer/memex/ontologies/SeamlessDigitalEngineering#System"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.commoncoreontologies.org/ont00001379"/>
+        <rdfs:comment xml:lang="en">Generally, different kinds of capabilities exist: organizational capability, system (3.1.35) capability, and operational capability. Organizational capabilities relate through the work practices that are adopted by the organizations. New systems (with new or enhanced system capabilities) are developed to enhance enterprise operational capability in response to stakeholders&apos; (3.1.32) concerns (3.1.5) about a problem situation. Operational capabilities provide operational services that are enabled by system capabilities. These system capabilities are inherent in the system that is conceived, developed, created, and/or operated by an enterprise. Enterprise SE concentrates its efforts on maximizing operational value for various stakeholders, some of whom can be interested in the improvement of some problem situation.</rdfs:comment>
+        <rdfs:label xml:lang="en">System Capability</rdfs:label>
+        <skos:definition xml:lang="en">A Realizable Entity that inheres in a System to the extent of that System&apos;s capacity to realize it in Intentional Acts of a certain type.</skos:definition>
+        <cco2:ont00001737 xml:lang="en">ability to do something useful under a particular set of conditions</cco2:ont00001737>
+        <cco2:ont00001745 xml:lang="en">ISO/IEC/IEEE 24641:2023 — Systems and Software engineering — Methods and tools for model-based systems and software engineering</cco2:ont00001745>
     </owl:Class>
     
 
